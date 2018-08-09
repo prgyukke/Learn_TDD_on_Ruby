@@ -1,7 +1,7 @@
 class FizzBuzz
 
   def convert(number)
-    "1"
+    number.to_s
   end
 
 end
