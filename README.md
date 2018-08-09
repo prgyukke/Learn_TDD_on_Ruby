@@ -15,7 +15,6 @@ OSXにて、[Docker For Mac](https://www.docker.com/docker-mac)のインスト�
 ```
 $ git clone git@github.com:prgyukke/Learn_TDD_on_Ruby.git
 $ cd Docker_for_Ruby/
-$ rm -rf .git
 $ docker-compose up -d
 ```
 
@@ -27,12 +26,12 @@ $ docker-compose up -d
 ### コンテナに入る際
 #### ruby用コンテナ
 ```
-$ docker exec -it docker_app_1 /bin/bash
+$ docker exec -it learn_tdd_on_ruby_app_1 /bin/bash
 ```
 
 #### db用コンテナ
 ```
-$ docker exec -it docker_db_1 /bin/bash
+$ docker exec -it learn_tdd_on_ruby_db_1 /bin/bash
 ```
 
 ### コンテナを抜ける際
@@ -44,7 +43,7 @@ $ docker exec -it docker_db_1 /bin/bash
 ### 開発終了時
 ```
 $ docker-compose down
-$ docker rmi docker_app
+$ docker rmi learn_tdd_on_ruby_app
 ```
 
 ## MySQL
