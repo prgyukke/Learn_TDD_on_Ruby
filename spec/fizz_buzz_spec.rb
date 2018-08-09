@@ -16,4 +16,8 @@ RSpec.describe 'Fizz Buzz' do
     expect(fizz_buzz.convert(3)).to eq "Fizz"
   end
 
+  it '5を渡したら文字列"Buzz"を返す' do
+    expect(fizz_buzz.convert(5)).to eq "Buzz"
+  end
+
 end
