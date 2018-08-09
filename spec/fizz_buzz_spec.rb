@@ -16,6 +16,12 @@ RSpec.describe 'Fizz Buzz' do
     end
   end
 
+  describe "3と5両方の倍数の場合" do
+    it '15を渡したら文字列"FizzBuzz"を返す' do
+      expect(fizz_buzz.convert(15)).to eq "FizzBuzz"
+    end
+  end
+
   describe "その他の場合" do
     it '1を渡したら文字列"1"を返す' do
       expect(fizz_buzz.convert(1)).to eq "1"
