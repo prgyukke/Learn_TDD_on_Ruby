@@ -4,20 +4,22 @@ RSpec.describe 'Fizz Buzz' do
 
   let(:fizz_buzz) { FizzBuzz.new }
 
-  it '1を渡したら文字列"1"を返す' do
-    expect(fizz_buzz.convert(1)).to eq "1"
+  describe "3の倍数の場合" do
+    it '3を渡したら文字列"Fizz"を返す' do
+      expect(fizz_buzz.convert(3)).to eq "Fizz"
+    end
   end
 
-  it '2を渡したら文字列"2"を返す' do
-    expect(fizz_buzz.convert(2)).to eq "2"
+  describe "5の倍数の場合" do
+    it '5を渡したら文字列"Buzz"を返す' do
+      expect(fizz_buzz.convert(5)).to eq "Buzz"
+    end
   end
 
-  it '3を渡したら文字列"Fizz"を返す' do
-    expect(fizz_buzz.convert(3)).to eq "Fizz"
-  end
-
-  it '5を渡したら文字列"Buzz"を返す' do
-    expect(fizz_buzz.convert(5)).to eq "Buzz"
+  describe "その他の場合" do
+    it '1を渡したら文字列"1"を返す' do
+      expect(fizz_buzz.convert(1)).to eq "1"
+    end
   end
 
 end
